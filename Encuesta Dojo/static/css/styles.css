@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.containerprincipal{
+    border: 1px solid #6d6875;
+    padding: 30px;
+    background-color: #6d6875;
+    color: white;
+
+}
+
+h1{
+    color:#e5989b;
+}
+
+#nombreInput{
+    width: 235px;
+}
+
+#lenguajeinput{
+    width: 240px;
+}
+
+#paisinput{
+    width: 240px;
+}
+
+button{
+    background-color: #b5838d;
+    border: 1px solid black;
+    color: white; 
+    width: 80px;
+    height: 20px;
+    box-shadow: 3px 3px 3px black;
+    margin-top: 20px;
+
+}

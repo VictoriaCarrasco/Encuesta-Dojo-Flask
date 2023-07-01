@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+        <title>Formulario</title>
+    </head>
+    <body>
+    <div class="containerprincipal">
+        <form action='/results' method="POST">
+        <h1>Dojo Survey</h1>
+        <div>
+            <label> Name:</label>
+        </div>
+        <div>
+            <input type="text" name="name" id="nombreInput">
+        </div>
+        <div>
+            <label>Dojo Location:</label>
+        </div>
+        <div>
+                <select name="pais" id="paisinput">
+                    <option> -- Select Location -- </option>
+                    <option> Chile </option>
+                    <option> Argentina</option>
+                    <option> Peru </option>
+                </select>
+        </div>
+        <div>
+            <label>Favorite languaje</label>
+        </div>
+        <div>
+                <select name="lenguaje" id="lenguajeinput">
+                    <option> -- Select Languaje -- </option>
+                    <option> HTML </option>
+                    <option> Python </option>
+                    <option> Javascript</option>
+                </select>
+        </div>
+        <div>
+            <label> Comments: (optional) </label>
+        </div>
+            <textarea name="comentario" cols="30" rows="4" ></textarea>
+        <div>
+            <label for="opcion1"><input type="checkbox" name="opciones" value="opcion1">¿Do you want to be contacted?</label>
+        </div>
+        <div>
+        <button  type="submit" name="enviar">  Submit</button>
+        </div>
+        </form>
+    </div>
+    </body>
+</html>
+
